@@ -3,3 +3,4 @@
 ## E TREINANDO GIT DA SANTANDER CODERS
 
 ## dando um pull no projeto
+## usando o fecth 
