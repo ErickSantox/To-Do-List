@@ -1,3 +1,5 @@
 ## ESTUDOS DE PROGRAMAÇÃO WEB DA FACUL
 
 ## E TREINANDO GIT DA SANTANDER CODERS
+
+## dando um pull no projeto
