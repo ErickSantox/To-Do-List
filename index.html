@@ -3,34 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erick aulas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stykesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>To Do List</title>
 </head>
 <body>
-    
-    <h1>Teste</h1>
-    <p>Eu dou a bunda</p>
-    <input placeholder="Digite seu nome">
-    <input type="submit">
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <input type="text" id="tasks" placeholder="Digite sua tarefa">
+        <span><ion-icon name="add-circle-outline"></ion-icon></span>
+    </header>
 
-    <table border="1">
-        <tr>
-            <td>linha1, célula1</td>
-            <td>linha1, célula2</td>
-        </tr>
-        <tr>
-            <td>Linha2, célula1</td>
-            <td>linha2, célula2</td>
-        </tr>
-    </table>
-
-    <ul>
-        <li>Café</li>
-        <li>Leite</li>
+    <ul id="list">
+        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>Fazer atividade ProgWeb </span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
+        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>o material complementar</span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
+        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>Assistir aos videos</span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
     </ul>
-    <br>
-    <ol>
-        <li>primeiro</li>
-        <li>segundo</li>
-    </ol>
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -1,0 +1,61 @@
+body{margin: 0;
+}
+
+header{
+    background-color: #B0C4DE;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+}
+
+header input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    font-size: 18px;
+}
+
+header span{
+    padding-left: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    cursor: pointer;
+    padding: 10px 0;
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    transition: 0.3s;
+    align-items: center;
+}
+
+ul li:nth-child(odd){
+    background-color: #708090;
+}
+ul li:hover{
+    background-color: #B0C4DE;
+}
+ul li span{
+    width: 80%;
+}
+ul li ion-icon{
+    width: 10%;
+    text-align: center;
+}
+.check:hover{color: lightgreen;}
+.trash{color: red;}
