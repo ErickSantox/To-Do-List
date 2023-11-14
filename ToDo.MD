@@ -1,1 +1,4 @@
-- [ ] dar merge no código
+- [ ] Add edição de tarefas;
+- [ ] Blocos de tarefas;
+- [ ] Add prioridades de tarefas;
+- [ ] Concluido ao finalizar a tarefa;
