@@ -57,5 +57,5 @@ ul li ion-icon{
     width: 10%;
     text-align: center;
 }
-.check:hover{color: lightgreen;}
-.trash{color: red;}
+
+.close{color: red;}
