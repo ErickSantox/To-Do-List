@@ -1,7 +1,2 @@
-## ESTUDOS DE PROGRAMAÇÃO WEB DA FACUL
+## ToDoList
 
-## E TREINANDO GIT DA SANTANDER CODERS
-
-## dando um pull no projeto
-## usando o fecth 
-## teste
