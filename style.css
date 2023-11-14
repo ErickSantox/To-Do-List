@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@100;400&display=swap');
+
 body{margin: 0;
+    background-color: #F0F0F2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 header{
-    background-color: #B0C4DE;
-    color: aliceblue;
+    background-color: #252B3B;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,17 +49,15 @@ ul li{
     align-items: center;
 }
 
-ul li:nth-child(odd){
-    background-color: #708090;
-}
+
 ul li:hover{
-    background-color: #B0C4DE;
+    background-color: #c3c7f3;
 }
 ul li span{
     width: 80%;
 }
 ul li ion-icon{
-    width: 10%;
+    width: 20%;
     text-align: center;
 }
 

@@ -1,15 +1,17 @@
 const task = document.querySelector("#tasks");
 const btn = document.querySelector("#btn");
 const list = document.querySelector("#list");
+const span = document.querySelector("span")
 
 btn.addEventListener("click", function(){
     if(task.value == ""){
-        alert("Digite uma tarefa valida")
+        alert("Digite uma tarefa válida")
     } 
     else{
         list.innerHTML += `<li>
                                 <ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon>
                                 <span>${task.value}</span>
+                                <ion-icon name="create-outline" class="edit"></ion-icon>
                                 <ion-icon class="close" name="trash-outline"></ion-icon>
                             </li>`
     }
