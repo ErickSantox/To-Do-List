@@ -11,13 +11,11 @@
     <header>
         <h1>Lista de Tarefas</h1>
         <input type="text" id="tasks" placeholder="Digite sua tarefa">
-        <span><ion-icon name="add-circle-outline"></ion-icon></span>
+        <span><ion-icon name="add-circle-outline" id="btn"></ion-icon></span>
     </header>
 
     <ul id="list">
-        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>Fazer atividade ProgWeb </span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
-        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>o material complementar</span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
-        <li><ion-icon class="check icon" name="checkmark-circle-outline"></ion-icon><span>Assistir aos videos</span><ion-icon class="trash icon" name="trash-outline"></ion-icon></li>
+        <li><ion-icon class="check" name="checkmark-circle-outline"></ion-icon><span>Fazer atividade ProgWeb </span><ion-icon class="close" name="trash-outline"></ion-icon></li>
     </ul>
 
 
@@ -25,5 +23,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
