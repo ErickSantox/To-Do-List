@@ -1,6 +1,5 @@
-- [  ] Add edição de tarefas;
+- [ X ] Add edição de tarefas;
 - [  ] Blocos de tarefas;
 - [  ] Add prioridades de tarefas;
 - [ X ] Trocar fontes;
-- [  ] Add funcionalidade para desmarcar tarefa concluida;
-
+- [ X ] Add funcionalidade para desmarcar tarefa concluida;
