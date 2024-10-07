@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const addButton = document.querySelector("#btn");
     const taskList = document.querySelector("#list");
 
+    // Carrega as tarefas salvas no localStorage ao carregar a página
+    loadTasks();
+
     addButton.addEventListener("click", function() {
         addTask(taskInput.value);
         taskInput.value = "";
@@ -37,10 +40,12 @@ function addTask(taskText) {
     `;
 
     taskList.appendChild(newTaskItem);
+    saveTasks(); // Salva as tarefas no localStorage após adicionar
 }
 
 function removeTask(taskElement) {
     taskElement.remove();
+    saveTasks(); // Salva as mudanças no localStorage após remover
 }
 
 function toggleTaskCompletion(taskElement) {
@@ -56,6 +61,7 @@ function toggleTaskCompletion(taskElement) {
         checkIcon.style.color = "#349223";
         taskText.style.textDecoration = "line-through";
     }
+    saveTasks(); // Salva o estado no localStorage após marcar/desmarcar
 }
 
 function editTask(taskElement) {
@@ -64,5 +70,33 @@ function editTask(taskElement) {
 
     if (newText !== null) {
         taskText.textContent = newText;
+        saveTasks(); // Salva as alterações no localStorage após editar
     }
+}
+
+// Função para salvar as tarefas no localStorage
+function saveTasks() {
+    const tasks = [];
+    document.querySelectorAll("#list li").forEach(function(taskItem) {
+        const taskText = taskItem.querySelector("span").textContent;
+        const isCompleted = taskItem.querySelector(".check").style.color === "rgb(52, 146, 35)";
+        tasks.push({ text: taskText, completed: isCompleted });
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+// Função para carregar as tarefas do localStorage
+function loadTasks() {
+    const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    tasks.forEach(function(task) {
+        const taskList = document.querySelector("#list");
+        const newTaskItem = document.createElement("li");
+        newTaskItem.innerHTML = `
+            <ion-icon class="check icon" name="checkmark-circle-outline" style="color: ${task.completed ? '#349223' : ''}"></ion-icon>
+            <span style="text-decoration: ${task.completed ? 'line-through' : ''}">${task.text}</span>
+            <ion-icon name="create-outline" class="edit"></ion-icon>
+            <ion-icon class="close" name="trash-outline"></ion-icon>
+        `;
+        taskList.appendChild(newTaskItem);
+    });
 }
